@@ -1,0 +1,141 @@
+# Iris2D
+
+Iris2D es un juego de ciudad virtual 2D donde los jugadores construyen, comercian e interactúan en un mundo compartido impulsado por tokens y activos digitales sobre Stellar.
+
+## Stack
+
+* React
+* TypeScript
+* Vite
+* Stellar Wallets Kit
+* Supabase / Neon
+* Stellar Testnet
+* Vercel
+
+## Arquitectura
+
+El proyecto está organizado por módulos independientes para permitir que el juego pueda evolucionar progresivamente desde un MVP hasta una aplicación con economía y activos digitales sobre Stellar.
+
+```text
+src/
+├── app/            # Aplicación principal
+├── components/     # Componentes UI reutilizables
+├── game/           # Núcleo del juego
+│   ├── state/      # Estado del juego
+│   ├── world/      # Mundo y mapa
+│   ├── player/     # Jugador
+│   ├── entities/   # Entidades del mundo
+│   └── economy/    # Economía del juego
+├── blockchain/     # Integración con Stellar
+├── database/       # Persistencia de datos
+├── services/       # Servicios y APIs
+├── types/          # Tipos TypeScript compartidos
+└── assets/         # Recursos gráficos
+```
+
+## Roadmap
+
+### Nivel 1 — Base de aplicación
+
+* [x] Estructura inicial del proyecto
+* [ ] App Shell
+* [ ] Game State
+* [ ] Game UI / HUD
+
+### Nivel 2 — Mundo 2D
+
+* [ ] World Map
+* [ ] Player Controller
+* [ ] World Entities
+* [ ] Interaction System
+
+### Nivel 3 — Economía
+
+* [ ] Player Inventory
+* [ ] Resource System
+* [ ] Building System
+* [ ] Economy System
+
+### Nivel 4 — Persistencia
+
+* [ ] Player Profile
+* [ ] Database Layer
+* [ ] Game Persistence
+* [ ] World Persistence
+
+### Nivel 5 — Stellar
+
+* [ ] Wallet Connection
+* [ ] Stellar Account
+* [ ] Stellar Service Layer
+* [ ] Blockchain Transactions
+
+### Nivel 6 — Economía on-chain
+
+* [ ] Iris Token
+* [ ] Token Rewards
+* [ ] Token Transfer
+* [ ] Transaction History
+
+### Nivel 7 — Multiplayer
+
+* [ ] Player Presence
+* [ ] Player Interaction
+* [ ] Trading System
+* [ ] Multiplayer Sync
+
+### Nivel 8 — Activos digitales
+
+* [ ] Asset Registry
+* [ ] Digital Asset Minting
+* [ ] Asset Ownership
+* [ ] Asset Marketplace
+
+## Desarrollo
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Iniciar el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+## Objetivo del MVP
+
+El MVP busca conseguir:
+
+```text
+Jugador
+   ↓
+Ciudad 2D
+   ↓
+Movimiento
+   ↓
+Interacción
+   ↓
+Recursos
+   ↓
+Construcción
+   ↓
+Progreso persistente
+   ↓
+Wallet Stellar
+   ↓
+Token / Transacción
+```
+
+## Stellar
+
+La integración blockchain se desarrollará inicialmente utilizando **Stellar Testnet**.
+
+La lógica del juego se mantendrá desacoplada de Stellar mediante una capa de servicios, permitiendo que las funcionalidades del juego puedan desarrollarse y probarse independientemente de la blockchain.
+
+## Estado del proyecto
+
+Proyecto en desarrollo — MVP.
+
